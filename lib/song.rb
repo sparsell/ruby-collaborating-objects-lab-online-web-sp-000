@@ -24,7 +24,7 @@ class Song
   #1. turn Artist's name as a string into an Artist object
     #a. Create the Artist instance or see if it already exists
     #b. send an Artits's name (a string - from parsed filename) so use Artist.find_or_create_by_name
-  #2. assign the song to the artist (use Artist.add_song(song) method)
+  #2. assign the song to the artist (use Artist.add_song(song) method
     def artist_name=(artist) #belongs to an artist
           self.artist = Artist.find_or_create_by_name(artist)
           self.artist.add_song(self)
